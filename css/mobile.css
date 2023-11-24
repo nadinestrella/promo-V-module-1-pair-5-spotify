@@ -1,0 +1,11 @@
+.header {
+    background-color: black;
+    height: 60px;
+    image: url(../images/menu-icon.png)
+}
+.logo {
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 10px ;
+}
