@@ -15,10 +15,8 @@
     top: 0;
     z-index: 50;
 }
-.header_nav{
-    display: flex;
-    margin-top: 20px;
-}
+
+
 .logo {
     width: 100px;
     height: 30px;
@@ -26,10 +24,21 @@
     margin-left: 10px;
 }
 .main-nav{
-    display: flex ;
+    display: none ;
     list-style: none;
     gap: 10px;
 }
+input:checked  ~ ul{
+    display: block;
+  }
+input{
+    display: none;
+}
+.menuIcon img {
+    width: 30px;
+    margin: 15px 20px;
+}
+
 .main-nav li{
 
     color: var(--color_white);
@@ -39,13 +48,36 @@
     border: solid 3px red;
     height: 50vh;
     color: var(--color_white);
-    background-image: url(../images/premium_dancer.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: right;
     background-color: #539df1;
-
+    text-align: start;
+    padding-top: 80px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+    padding-left: 5px;
+    
+    
 }
+.button{
+    text-transform: uppercase;
+    background-color: green;
+    width: 80%;
+    border-radius: 30px;
+    color: var(--color_white);
+    padding: 5px;
+    
+}
+.premium h1{
+    font-size: 30px;
+}
+.premium p{
+    font-size: 12px;
+}
+.premium h2{
+    font-size: 17px;
+}
+
 .post{
     border: solid 3px red;
     background-color: blue;
@@ -101,4 +133,23 @@
 }
 .flag{
     width: 15px;
+}
+
+@media (min-width:480px){
+    .premium{
+    background-image: url(../images/premium_dancer.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    }
+    .main-nav{
+        display: flex ;
+        list-style: none;
+        gap: 10px;
+    }
+    .menuIcon img {
+        display: none;
+        
+    }
+
 }
