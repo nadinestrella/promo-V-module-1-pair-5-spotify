@@ -1,5 +1,30 @@
-.page__header {
+.header {
+  background-color: $color-black;
+  height: 60px;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  &__logo{
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  &__menuIcon{
+    width: 30px;
+    margin: 15px;
+    display: flex;
+  }
+}
+.nav{
+  &__ul{
+    display: none ;
+    list-style: none;
+    gap: 10px;
+    & li{
+      color: $color-white;
+    }
+  }
 }
