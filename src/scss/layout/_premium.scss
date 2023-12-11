@@ -30,5 +30,18 @@
     border: none; 
   }
 
+  @media (min-width:480px){
+    
+    background-image: url(/images/premium_dancer.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    
+    .button{
+      width: 200px;
+  }
+  }
+
 }
 

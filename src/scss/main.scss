@@ -1,106 +1,18 @@
 @import 'core/variables';
 @import 'core/reset';
-/*@import 'components/code';
-@import 'components/links';
-@import 'layout/page';*/
 @import 'layout/header';
 @import 'layout/premium';
-/*@import 'layout/footer';
-@import 'pages/index';*/
+@import 'layout/benefits';
+@import 'layout/footer';
+
 
 body{
     font-family: $font-main;
-    font-size: 62.5%;
-}
-
-.post{
-    text-align: center;
-    padding: 10px;
-    padding-bottom: 60px;
-}
-
-.options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.options article {
-    width: 400px;
-    height: 100px;
-    padding: 20px;
-    text-align: left;
-    font-family: $font-main;
-
-}
-.options article img{
-    float: left;
-    width: 30%;
-    display: flex;
-    flex-direction:column;
-    justify-content: start;
-    padding-right: 15px;
-
-}
-
-.options article h3{
-    font-size: 2rem;
-    padding-bottom: 15px;
-}
-.options article p{
-    font: 1.8rem;
-}
-.post h2 {
-    padding: 15px;
-    font-size: 3rem;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: $color-black;
-    color: $color-white;
-    padding: 15px;
-    font-size: 10px;
     
 }
-.footer ul{
-    list-style: none;
 
-}
-#footer-right {
-    min-height: 100%;
 
-    text-align: left;
-}
-.flag{
-    width: 15px;
-}
 
-@media (min-width:480px){
-    .premium{
-    background-image: url(../images/premium_dancer.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: right;
-    }
-    .main-nav{
-        display: flex ;
-        list-style: none;
-        gap: 10px;
-    }
-    .menuIcon img {
-        display: none;
-    }
-    .options article {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 200px;
-        height: 200px;
-    }
-    .button{
-        width: 200px;
-    }
-}
+
+
+

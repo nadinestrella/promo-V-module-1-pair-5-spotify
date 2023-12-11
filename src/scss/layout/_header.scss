@@ -6,25 +6,57 @@
   position: sticky;
   top: 0;
   z-index: 50;
+
   &__logo{
-    width: 100px;
-    height: 30px;
-    margin-top: 15px;
-    margin-left: 10px;
+    padding: 15px;
   }
+
   &__menuIcon{
     width: 30px;
     margin: 15px;
     display: flex;
+
+    @media (min-width: 480px){
+      display: none;
+    }
   }
 }
+
 .nav{
+
+  @media (min-width: 480px){
+  
+    display: flex ;
+    align-items: center;
+  
+  }
+
   &__ul{
     display: none ;
     list-style: none;
     gap: 10px;
-    & li{
-      color: $color-white;
+
+    @media (min-width: 480px){
+  
+      display: flex ;
+      list-style: none;
+      gap: 10px;
+      
+  
     }
+
+    & li a{
+      color: $color-white;
+      text-decoration: none;
+      font-size: 1.6rem;
+      
+    }
+    
   }
+
+
+ 
 }
+  
+
+
