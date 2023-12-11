@@ -78,15 +78,14 @@
     
     .options {
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
     
-    
-    
+     
 }
 
-.options article {
+    .options article {
    
     text-align: left;
     font-family: $font-main;
