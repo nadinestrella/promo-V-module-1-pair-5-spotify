@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Spotify</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="./scss/main.scss"/>
+
+</head>
+<body>
+    <header>
+       <!-- <img src="/images/logo.png" alt="logo"> -->
+    </header>
+    <main>
+        <section class="register">
+            <h1>Regístrate gratis para escuchar.</h1>
+            <button> <i class="fa-brands fa-facebook"></i>> Regístrate con Facebook</button>
+            <button><i class="fa-brands fa-google"></i> Regístrare con Google</button>
+            <p class="register__circle">o</p>
+        </section>
+        <section class="form">
+            <h2>Regístrate con tu correo electrónico</h2>
+            <form action="https://dev.adalab.es/api/form">
+                <label for="mail">¿Cuál es tu correo electrónico?</label>
+                <input type="email" name="mail" id="mail" placeholder="Pon tu correo electrónico." required />
+                <label for="mail">Confirma el correo electrónico</label>
+                <input type="email" name="mail" id="mail" placeholder="Vuelve a poner tu correo electr
+                onico." required />
+                <label for="password">Crea una contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Crea una contraseña." required>
+                <label for="name">¿Cómo quieres que te llamemos?</label>
+                <input type="text" name="password" id="password" placeholder="Pon un nombre de perfil." required>
+                <span>Esto aparece en tu perfil</span>
+                <label for="date">¿Cuál es tu fecha de nacimiento?</label>
+                <input type="number" name="day" id="day" min="1" max="31"  placeholder="DD" required>
+                <select name="month">
+                    <option value="Mes" placeholder="Mes" disable>Mes</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                <label for="year"> Año</label>
+                <input type="number" name="year" id="year" placeholder="AAAA" min="1900" max="2005" required>
+                <label for="gender">¿Cuál es tu genero?
+                <input type="radio" name="gender" value="H">Hombre
+                <input type="radio" name="gender" value="M">Mujer
+                <input type="radio" name="gender" value="NB">No binario
+                 </label>
+                 <input type="checkbox" name="newsletter" value="Y"><span>Quiero que me enviéis novedades y ofertas de Spotify</span>
+                 <input type="checkbox" name="" id=""><span>Compartir mis datos de registro con los proveedores de contenidos de Spotify para fines de marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.</span>
+                <input type="submit" value="Registrarte">
+            </form>
+            <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+        </section>
+    </main>
+    
+</body>
+</html>

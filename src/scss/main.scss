@@ -4,8 +4,12 @@
 @import 'layout/premium';
 @import 'layout/benefits';
 @import 'layout/footer';
+@import 'layout/signup';
 
 
+:root{
+    font-size: 62.5%;
+}
 body{
     font-family: $font-main;
     
